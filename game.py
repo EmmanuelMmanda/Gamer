@@ -8,14 +8,14 @@ class Game:
         self.window = tk.Tk()
         self.window.title("Game")
         self.window.geometry("630x570")
-        self.valid_vouchers = ["g", "g"]
+        self.valid_vouchers = ["game10", "game11","game12", "game13"]
 
         self.result_frame = tk.Frame(self.window)
         self.result_frame.pack()
 
         self.restart_button = tk.Button(self.window, text="Restart Game", command=self.restart_game, font=("Arial", 15))
         self.play_game()
-        self.BASE_DIR = "Gamer/"
+        self.BASE_DIR = ""
         self.window.mainloop()
 
     def restart_game(self):
